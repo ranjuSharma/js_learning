@@ -45,3 +45,39 @@ const myFunction = function() {
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof heros);
+
+// undefined = undefined 
+// null = object
+// boolean = boolean 
+// number =  number
+// string = string 
+// object (native and doesnot implement [[call]]) = function
+// object (host and does not implement [[call]]) = implementation defined 
+// except may not be " undefined " , "boolean", "numeber", 
+// or " string "
+ 
+
+/************* memory ****************/
+
+// stack (primitive ) , heap (Non - Primitive )
+
+let myYoutubename = "stimulateyuvaa"
+
+let anothername = myYoutubename
+anothername = "chai and chaos"
+
+console.log(myYoutubename);
+console.log(anothername) ;
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ranju@google.com"
+
+console.log(userOne.email) ;
+console.log(userTwo.email);
+
